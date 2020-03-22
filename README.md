@@ -4,7 +4,7 @@
 
 | Number | Question                                                                                              |
 | ------ | ----------------------------------------------------------------------------------------------------- |
-| 1      | [What is CSharp ?](#What-is-CSharp)                                                                   |
+| 1      | [What is C# ?](#What-is-C#)                                                                   |
 | 2      | [What is the root type of all types ?](#What-is-the-root-type-of-all-types)                           |
 | 3      | [What is object ?](#What-is-object)                                                                   |
 | 4      | [What is value type ?](#What-is-value-type)                                                           |
@@ -79,7 +79,7 @@
 
 
 
-1. #### What is CSharp ?
+1. #### What is C#?
 
 C# (pronounced "See Sharp") is a general-purpose, multi-paradigm programming language encompassing strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented (class-based), type-safe, and component-oriented programming disciplines. 
 
@@ -114,7 +114,7 @@ C# was designed by Anders Hejlsberg, and its development team is currently led b
 
 <br/>
 
-1. #### What is the root type of all types?
+2. #### What is the root type of all types?
 
 C# has a unified type system. All C# types, including primitive types such as int and double, inherit from a single root object type. Thus, all types share a set of common operations, and values of any type can be stored, transported, and operated upon in a consistent manner. Furthermore, C# supports both user-defined reference types and value types, allowing dynamic allocation of objects as well as in-line storage of lightweight structures.
 
