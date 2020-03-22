@@ -4,7 +4,7 @@
 
 | Number | Question                                                                                              |
 | ------ | ----------------------------------------------------------------------------------------------------- |
-| 1      | [What is C# ?](#What-is-C#)                                                                   |
+| 1      | [What is C# ?](#What-is-CSharp)                                                                   |
 | 2      | [What is the root type of all types ?](#What-is-the-root-type-of-all-types)                           |
 | 3      | [What is object ?](#What-is-object)                                                                   |
 | 4      | [What is value type ?](#What-is-value-type)                                                           |
@@ -79,7 +79,7 @@
 
 
 
-1. #### What is C#?
+1. #### What is CSharp?
 
 C# (pronounced "See Sharp") is a general-purpose, multi-paradigm programming language encompassing strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented (class-based), type-safe, and component-oriented programming disciplines. 
 
