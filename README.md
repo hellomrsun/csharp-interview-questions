@@ -119,7 +119,12 @@ ECMA 334 Specification: [Link](https://www.ecma-international.org/publications/s
 
 C# has a unified type system. 
 
-All C# types, including primitive types such as int and double, inherit from a single root object type. Thus, all types share a set of common operations, and values of any type can be stored, transported, and operated upon in a consistent manner. Furthermore, C# supports both user-defined reference types and value types, allowing dynamic allocation of objects as well as in-line storage of lightweight structures.
+All C# types, including primitive types such as int and double, inherit from a single root **object** type. 
+
+Thus, all types share a set of common operations, and values of any type can be stored, transported, and operated upon in a consistent manner. 
+
+Furthermore, C# supports both user-defined reference types and value types, allowing dynamic allocation of objects as well as in-line storage of lightweight structures.
+
 
 **[↥ back to top](#CSharp-interview-questions)**
 
@@ -270,7 +275,11 @@ public static void Main(){
 
 6. #### What is the difference between value type and reference type?
 
+Value typed data is stored in stack.
 
+Reference typed data is stored in heap, the reference to data is stored in stack.
+
+![](./images/001_stack_heap.png)
 
 **[↥ back to top](#CSharp-interview-questions)**
 
