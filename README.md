@@ -91,7 +91,7 @@ C# is one of the programming languages designed for the Common Language Infrastr
 
 C# was designed by Anders Hejlsberg, and its development team is currently led by Mads Torgersen.
 
-ECMA 334 Speficiation: [Link](https://www.ecma-international.org/publications/standards/Ecma-334.htm)
+ECMA 334 Specification: [Link](https://www.ecma-international.org/publications/standards/Ecma-334.htm)
 
 
 | C# version | Publication year | .NET version                                 | Visual Studio version   | New Features                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
@@ -177,7 +177,7 @@ Object has 1 public method **GetType** to get the type of a variable.
 
 <br/>
 
-1. #### What is value type ?
+4. #### What is value type ?
 
 Value type includes **all numeric** types, **DateTime**, **Timespan**, **Struct** and **Enum** types.
 
