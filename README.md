@@ -116,11 +116,11 @@ ECMA 334 Specification: [Link](https://www.ecma-international.org/publications/s
 
 <br/>
 
-![](images/chevron.png) **[back to top](#CSharp-interview-questions)**
+**[![](images/chevron.png) back to top](#CSharp-interview-questions-and-answers)**
 
 <br/>
 
-2. #### What is the root type of all types?
+1. #### What is the root type of all types?
 
 C# has a unified type system. 
 
@@ -132,7 +132,7 @@ Furthermore, C# supports both user-defined reference types and value types, allo
 
 <br/>
 
-![](images/chevron.png) **[back to top](#CSharp-interview-questions)**
+**[![](images/chevron.png) back to top](#CSharp-interview-questions-and-answers)**
 
 <br/>
 
@@ -186,7 +186,7 @@ Object has 1 public method **GetType** to get the type of a variable.
 
 <br/>
 
-**[![](images/chevron.png) back to top](#CSharp-interview-questions)**
+**[![](images/chevron.png) back to top](#CSharp-interview-questions-and-answers)**
 
 <br/>
 
@@ -251,7 +251,7 @@ Console.WriteLine(isValueType); //Display: true
 
 <br/>
 
-**[![](images/chevron.png) back to top](#CSharp-interview-questions)**
+**[![](images/chevron.png) back to top](#CSharp-interview-questions-and-answers)**
 
 <br/>
 
@@ -290,7 +290,7 @@ public static void Main(){
 
 <br/>
 
-**[![](images/chevron.png) back to top](#CSharp-interview-questions)**
+**[![](images/chevron.png) back to top](#CSharp-interview-questions-and-answers)**
 
 <br/>
 
@@ -305,7 +305,7 @@ Reference typed data is stored in heap, the reference to data is stored in stack
 
 <br/>
 
-**[![](images/chevron.png) back to top](#CSharp-interview-questions)**
+**[![](images/chevron.png) back to top](#CSharp-interview-questions-and-answers)**
 
 <br/>
 
@@ -327,7 +327,7 @@ public static void Main(){
 
 <br/>
 
-**[![](images/chevron.png) back to top](#CSharp-interview-questions)**
+**[![](images/chevron.png) back to top](#CSharp-interview-questions-and-answers)**
 
 <br/>
 
@@ -347,7 +347,7 @@ public struct Coordinate {
 
 <br/>
 
-**[![](images/chevron.png) back to top](#CSharp-interview-questions)**
+**[![](images/chevron.png) back to top](#CSharp-interview-questions-and-answers)**
 
 <br/>
 
@@ -410,7 +410,7 @@ Class members could be **public**, **internal**, **protected**, **protected inte
 
 <br/>
 
-**[![](images/chevron.png) back to top](#CSharp-interview-questions)**
+**[![](images/chevron.png) back to top](#CSharp-interview-questions-and-answers)**
 
 <br/>
 
