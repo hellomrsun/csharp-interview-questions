@@ -12,13 +12,11 @@
 | 6      | [What is the difference between value type and reference type ?](#What-is-the-difference-between-value-type-and-reference-type) |
 | 7      | [What is class ?](#What-is-class)                                                                                               |
 | 8      | [What is struct ?](#What-is-struct)                                                                                             |
-| 9      | [What is the difference between struct and class ?](#What-is-the-difference-between-struct-and-class)                           |
-| 10     | What is enum ?                                                                                                                  |
-| 11     | What are the types of class ?                                                                                                   |
-| 12     | What is sealed class ?                                                                                                          |
-| 13     | What is partial class ?                                                                                                         |
-| 14     | What is default class access modifier ?                                                                                         |
-| 15     | What is abstract class ?                                                                                                        |
+| 9      | [What are access modifiers ?](#What-are-access-modifiers)                                                                       |
+| 10     | What is sealed class ?                                                                                                          |
+| 11     | What is partial class ?                                                                                                         |
+| 12     | What is abstract class ?                                                                                                        |
+| 13     | What is static class ?                                                                                                          |
 | 16     | What is interface ?                                                                                                             |
 | 17     | What is the difference between interface and abstract class ?                                                                   |
 | 18     | What is anonymous type ?                                                                                                        |
@@ -26,6 +24,7 @@
 | 20     | What is inheritance ?                                                                                                           |
 | 21     | What is encapsulation ?                                                                                                         |
 | 22     | What is polymorphism ?                                                                                                          |
+| 22     | What is abstraction ?                                                                                                           |
 | 23     | What is managed code and unmanaged code ?                                                                                       |
 | 24     | What is the difference between virtual method and abstract method ?                                                             |
 | 25     | What is namespace ?                                                                                                             |
@@ -182,7 +181,7 @@ Object has 1 public method **GetType** to get the type of a variable.
 
 <br/>
 
-4. #### What is value type ?
+4. #### What is value type?
 
 Value type includes **all numeric** types, **DateTime**, **Timespan**, **Struct** and **Enum** types.
 
@@ -237,7 +236,7 @@ Console.WriteLine(isValueType); //Display: true
 
 <br/>
 
-5. #### What is reference type ?
+5. #### What is reference type?
 
 Reference type includes **class**, **string**, **delegates**, **interface**, and **array** types.
 
@@ -325,7 +324,57 @@ public struct Coordinate {
 <br/>
 
 
-31.  #### What is the difference between string and System.String ? 
+9. #### What are access modifiers?
+
+
+**public**: can be accessed in same assembly or different assembly
+**internal**: can be accessed in the same assembly, but not from another assembly.
+**protected internal**: can be accessed in the same assembly, or derived types in another assembly.
+**protected**: can be accessed in the same class or derived class.
+**private protected**: can be accessed in the same class or derived class.
+**private**: The type or member can be accessed only by code in the same class or struct.
+
+
+Classes and structs declared **directly within a namespace** (in other words, that aren't nested within other classes or structs) can be either **public** or **internal**. Internal is the default if no access modifier is specified.
+
+```csharp
+namespace CSharpAssembly {
+    //The following are OK
+    public class ClassA {}
+    internal class ClassB {} 
+
+    //The following are KO
+    //Compile-time error: Elements defined in a namespace cannot be explicitly declared as private, protected, or protected internal
+    private class ClassC {} 
+    protected class ClassD {}
+    private protected class ClassE {} 
+    protected internal class ClassF {} 
+}
+```
+
+Class members could be public, internal, protected, protected internal, private, private protected, and private.
+
+<table>
+<tr><td><b>Access Modifier</b></td><td colspan=3><b>Same Assembly</b></td><td colspan=2><b>Different Assembly</b></td></tr>
+<tr><td></td><td><b>Same class</b></td><td><b>Derived class</b></td><td><b>Other class</b></td><td><b>Derived class</b></td><td><b>Other class</b></td></tr>
+<tbody>
+<tr><td><b>Public</b></td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
+<tr><td><b>Internal</b></td><td>Y</td><td>Y</td><td>Y</td><td></td><td></td></tr>
+<tr><td><b>Protected Internal</b></td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td></td></tr>
+<tr><td><b>Protected</b></td><td>Y</td><td>Y</td><td></td><td>Y</td><td></td></tr>
+<tr><td><b>Private Protected</b></td><td>Y</td><td>Y</td><td></td><td></td><td></td></tr>
+<tr><td><b>Private</b></td><td>Y</td><td></td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+
+
+**[↥ back to top](#CSharp-interview-questions)**
+
+<br/>
+
+
+
+31.   #### What is the difference between string and System.String ? 
 
 The string type represents a sequence of zero or more Unicode characters. string is an alias for System.String in .NET.
 
