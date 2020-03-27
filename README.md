@@ -1,8 +1,8 @@
-###  CSharp interview questions
+###  CSharp interview questions and answers
 
 <br/>
 
-| Number | Question                                                                                                                        |
+| Number | Questions                                                                                                                        |
 | ------ | ------------------------------------------------------------------------------------------------------------------------------- |
 | 1      | [What is C# ?](#What-is-CSharp)                                                                                                 |
 | 2      | [What is the root type of all types ?](#What-is-the-root-type-of-all-types)                                                     |
@@ -77,6 +77,9 @@
 | 72     | What is async and await ?                                                                                                       |
 
 
+<br/>
+<br/>
+
 
 1. #### What is CSharp?
 
@@ -92,6 +95,9 @@ C# was designed by Anders Hejlsberg, and its development team is currently led b
 
 ECMA 334 Specification: [Link](https://www.ecma-international.org/publications/standards/Ecma-334.htm)
 
+<br/>
+
+##### C# version & features:
 
 | C# version | Publication year | .NET version                                 | Visual Studio version   | New Features                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | ---------- | ---------------- | -------------------------------------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -108,9 +114,9 @@ ECMA 334 Specification: [Link](https://www.ecma-international.org/publications/s
 | C# 7.3     | 2017             | .NET Core 2.1<br/>.NET Core 2.2<br/>.NET 4.8 | Visual Studio 2017      | > Accessing fixed fields without pinning<br/>> Reassigning ref local variables<br/>> Using initializers on stackalloc arrays<br/>> Using fixed statements with any type that supports a pattern<br/>> Using additional generic constraints                                                                                                                                                                                                                                            |
 | C# 8.0     | 2019             | .NET Core 3.0                                | Visual Studio 2019      | > Readonly members<br/>> Default interface methods<br/>> Switch expressions<br/>> Property patterns<br/>> Tuple patterns<br/>> Positional patterns<br/>> Using declarations<br/>> Static local functions<br/>> Disposable ref structs<br/>> Nullable reference types<br/>> Asynchronous streams<br/>> Indices and ranges<br/>> Null-coalescing assignment<br/>> Unmanaged constructed types<br/>> Stackalloc in nested expressions<br/>> Enhancement of interpolated verbatim strings |
 
+<br/>
 
-
-**[↥ back to top](#CSharp-interview-questions)**
+**[![](images/chevron.png) back to top](#CSharp-interview-questions)**
 
 <br/>
 
@@ -124,8 +130,9 @@ Thus, all types share a set of common operations, and values of any type can be 
 
 Furthermore, C# supports both user-defined reference types and value types, allowing dynamic allocation of objects as well as in-line storage of lightweight structures.
 
+<br/>
 
-**[↥ back to top](#CSharp-interview-questions)**
+**[![](images/chevron.png) back to top](#CSharp-interview-questions)**
 
 <br/>
 
@@ -177,13 +184,17 @@ You can override the default methods in your customized derived types (structs, 
 
 Object has 1 public method **GetType** to get the type of a variable.
 
-**[↥ back to top](#CSharp-interview-questions)**
+<br/>
+
+**[![](images/chevron.png) back to top](#CSharp-interview-questions)**
 
 <br/>
 
 4. #### What is value type?
 
 Value type includes **all numeric** types, **DateTime**, **Timespan**, **Struct** and **Enum** types.
+
+<br/>
 
 | C# Value type keyword | .NET type       | Description                                                                                                                         |
 | --------------------- | --------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
@@ -203,8 +214,12 @@ Value type includes **all numeric** types, **DateTime**, **Timespan**, **Struct*
 | DateTime              | System.DateTime | date and time of day                                                                                                                |
 | TimeSpan              | System.TimeSpan | time interval                                                                                                                       |
 
+<br/>
+
 The caracteristics of value type is: a value type variable contains a simple value.
 When you copy an value type variable, you create **a new copy of the value**.
+
+<br/>
 
 ```csharp
 //Declare a struct
@@ -225,6 +240,8 @@ public static void Main(){
 }
 ```
 
+<br/>
+
 To check if a variable is value type, you can simply do this:
 ```csharp
 var value = 10;
@@ -232,7 +249,9 @@ var isValueType = value.GetType().IsValueType;
 Console.WriteLine(isValueType); //Display: true
 ```
 
-**[↥ back to top](#CSharp-interview-questions)**
+<br/>
+
+**[![](images/chevron.png) back to top](#CSharp-interview-questions)**
 
 <br/>
 
@@ -240,13 +259,15 @@ Console.WriteLine(isValueType); //Display: true
 
 Reference type includes **class**, **string**, **delegates**, **interface**, and **array** types.
 
+<br/>
+
 | C# Reference type keyword | .NET type     | Description                                                           |
 | ------------------------- | ------------- | --------------------------------------------------------------------- |
 | object                    | System.Object | Base type of all types                                                |
 | string                    | System.String | An array of characters                                                |
 | dynamic                   | System.Object | To the common language runtime (CLR), dynamic is identical to object. |
 
-
+<br/>
 
 When you copy an reference type variable, you **create a new copy of reference** pointing to the same value.
 
@@ -267,7 +288,9 @@ public static void Main(){
 }
 ```
 
-**[↥ back to top](#CSharp-interview-questions)**
+<br/>
+
+**[![](images/chevron.png) back to top](#CSharp-interview-questions)**
 
 <br/>
 
@@ -280,7 +303,9 @@ Reference typed data is stored in heap, the reference to data is stored in stack
 
 ![](./images/001_stack_heap.png)
 
-**[↥ back to top](#CSharp-interview-questions)**
+<br/>
+
+**[![](images/chevron.png) back to top](#CSharp-interview-questions)**
 
 <br/>
 
@@ -300,8 +325,9 @@ public static void Main(){
 }
 ```
 
+<br/>
 
-**[↥ back to top](#CSharp-interview-questions)**
+**[![](images/chevron.png) back to top](#CSharp-interview-questions)**
 
 <br/>
 
@@ -319,7 +345,9 @@ public struct Coordinate {
 }
 ```
 
-**[↥ back to top](#CSharp-interview-questions)**
+<br/>
+
+**[![](images/chevron.png) back to top](#CSharp-interview-questions)**
 
 <br/>
 
@@ -334,8 +362,10 @@ public struct Coordinate {
 **private protected**: can be accessed in the same class or derived class.
 **private**: The type or member can be accessed only by code in the same class or struct.
 
+<br/>
 
 Classes and structs declared **directly within a namespace** (in other words, that aren't nested within other classes or structs) can be either **public** or **internal**. Internal is the default if no access modifier is specified.
+
 
 ```csharp
 namespace CSharpAssembly {
@@ -352,7 +382,13 @@ namespace CSharpAssembly {
 }
 ```
 
-Class members could be public, internal, protected, protected internal, private, private protected, and private.
+Class members could be **public**, **internal**, **protected**, **protected internal**, **private**, **private protected**, and **private**.
+
+<br/>
+
+##### Class member access modifier table:
+
+<br/>
 
 <table>
 <tr><td><b>Access Modifier</b></td><td colspan=3><b>Same Assembly</b></td><td colspan=2><b>Different Assembly</b></td></tr>
@@ -367,8 +403,9 @@ Class members could be public, internal, protected, protected internal, private,
 </tbody>
 </table>
 
+<br/>
 
-**[↥ back to top](#CSharp-interview-questions)**
+**[![](images/chevron.png) back to top](#CSharp-interview-questions)**
 
 <br/>
 
