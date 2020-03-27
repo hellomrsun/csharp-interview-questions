@@ -116,7 +116,7 @@ ECMA 334 Specification: [Link](https://www.ecma-international.org/publications/s
 
 <br/>
 
-**[![](images/chevron.png) back to top](#CSharp-interview-questions)**
+![](images/chevron.png) **[back to top](#CSharp-interview-questions)**
 
 <br/>
 
@@ -132,7 +132,7 @@ Furthermore, C# supports both user-defined reference types and value types, allo
 
 <br/>
 
-**[![](images/chevron.png) back to top](#CSharp-interview-questions)**
+![](images/chevron.png) **[back to top](#CSharp-interview-questions)**
 
 <br/>
 
@@ -356,10 +356,15 @@ public struct Coordinate {
 
 
 **public**: can be accessed in same assembly or different assembly
+
 **internal**: can be accessed in the same assembly, but not from another assembly.
+
 **protected internal**: can be accessed in the same assembly, or derived types in another assembly.
+
 **protected**: can be accessed in the same class or derived class.
+
 **private protected**: can be accessed in the same class or derived class.
+
 **private**: The type or member can be accessed only by code in the same class or struct.
 
 <br/>
@@ -382,9 +387,9 @@ namespace CSharpAssembly {
 }
 ```
 
-Class members could be **public**, **internal**, **protected**, **protected internal**, **private**, **private protected**, and **private**.
-
 <br/>
+
+Class members could be **public**, **internal**, **protected**, **protected internal**, **private**, **private protected**, and **private**.
 
 ##### Class member access modifier table:
 
