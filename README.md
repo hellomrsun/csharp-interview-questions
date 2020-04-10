@@ -17,9 +17,8 @@
 | 11     | [What is partial class ?](#What-is-partial-class)                                                                               |
 | 12     | [What is abstract class ?](#What-is-abstract-class)                                                                             |
 | 13     | [What is static class ?](#What-is-static-class)                                                                                 |
-| 14     | [What is partial method ?](#What-is-partial-method)                                                                               |
-| 15     | [What is sealed method ?](#What-is-partial-method)                                                                               |
-
+| 14     | [What is partial method ?](#What-is-partial-method)                                                                             |
+| 15     | [What is sealed method ?](#What-is-partial-method)                                                                              |
 | 16     | [What is interface ?](#What-is-interface)                                                                                       |
 | 17     | What is the difference between interface and abstract class ?                                                                   |
 | 18     | What is anonymous type ?                                                                                                        |
