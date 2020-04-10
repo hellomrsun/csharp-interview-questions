@@ -2,7 +2,7 @@
 
 <br/>
 
-| Number | Questions                                                                                                                        |
+| Number | Questions                                                                                                                       |
 | ------ | ------------------------------------------------------------------------------------------------------------------------------- |
 | 1      | [What is C# ?](#What-is-CSharp)                                                                                                 |
 | 2      | [What is the root type of all types ?](#What-is-the-root-type-of-all-types)                                                     |
@@ -13,11 +13,14 @@
 | 7      | [What is class ?](#What-is-class)                                                                                               |
 | 8      | [What is struct ?](#What-is-struct)                                                                                             |
 | 9      | [What are access modifiers ?](#What-are-access-modifiers)                                                                       |
-| 10     | What is sealed class ?                                                                                                          |
-| 11     | What is partial class ?                                                                                                         |
-| 12     | What is abstract class ?                                                                                                        |
-| 13     | What is static class ?                                                                                                          |
-| 16     | What is interface ?                                                                                                             |
+| 10     | [What is sealed class ?](#What-is-sealed-class)                                                                                 |
+| 11     | [What is partial class ?](#What-is-partial-class)                                                                               |
+| 12     | [What is abstract class ?](#What-is-abstract-class)                                                                             |
+| 13     | [What is static class ?](#What-is-static-class)                                                                                 |
+| 14     | [What is partial method ?](#What-is-partial-method)                                                                               |
+| 15     | [What is sealed method ?](#What-is-partial-method)                                                                               |
+
+| 16     | [What is interface ?](#What-is-interface)                                                                                       |
 | 17     | What is the difference between interface and abstract class ?                                                                   |
 | 18     | What is anonymous type ?                                                                                                        |
 | 19     | What is boxing and unboxing ?                                                                                                   |
@@ -202,7 +205,7 @@ Value type includes **all numeric** types, **DateTime**, **Timespan**, **Struct*
 | byte                  | System.Byte     | Unsigned 8-bit value                                                                                                                |
 | sbyte                 | System.SByte    | Signed 8-bit value                                                                                                                  |
 | char                  | System.Char     | 16-bit Unicode character (char never represents an 8-bit value as it would in unmanaged C++.)                                       |
-| decimal               | System.Decimal  | A 128-bit high-precision floating-point value commonly used for financial calculations in which rounding errors can’t be tolerated. |
+| decimal               | System.Decimal  | A 128-bit high-precision floating-point value commonly used for financial calculations in which rounding errors can't be tolerated. |
 | double                | System.Double   | IEEE 64-bit floating point value                                                                                                    |
 | float                 | System.Single   | IEEE 32-bit floating point value                                                                                                    |
 | int                   | System.Int32    | Signed 32-bit value                                                                                                                 |
@@ -294,7 +297,6 @@ public static void Main(){
 
 <br/>
 
-
 6. #### What is the difference between value type and reference type?
 
 Value typed data is stored in stack.
@@ -309,10 +311,9 @@ Reference typed data is stored in heap, the reference to data is stored in stack
 
 <br/>
 
-
 7. #### What is class?
 
-A type that is defined as a class is a reference type. 
+A type that is defined as a class is a reference type.
 Its default value is null.
 
 ```csharp
@@ -351,9 +352,7 @@ public struct Coordinate {
 
 <br/>
 
-
 9. #### What are access modifiers?
-
 
 **public**: can be accessed in same assembly or different assembly
 
@@ -414,9 +413,168 @@ Class members could be **public**, **internal**, **protected**, **protected inte
 
 <br/>
 
+10. #### What is sealed class?
+
+Sealed class can not be inherited.
+
+```csharp
+public sealed class A{
+    public int Add(int x, int y){
+        return x + y;
+    }
+}
+```
+
+<br/>
+
+**[![](images/chevron.png) back to top](#CSharp-interview-questions-and-answers)**
+
+<br/>
+
+11. #### What is partial class?
+
+Partial class means a class can be divided into several classes.
+
+Partial class could be generated automatically by frameworks like ASP.NET Web Forms, or Entity Framework etc.
+
+ASP.NET Web Forms example:
+
+```csharp
+//File: About.aspx.cs
+public partial class About : Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+    }
+}
+//File: About.aspx.designer.cs
+public partial class About
+{
+}
+```
+
+In the above About class you can see, if one partial class already inherit from a base class, its homologue will not need to inherit the same base class again in the declaration.
+
+Entity framework generated partial dbContext:
+
+```csharp
+public partial class WineDbEntities : DbContext
+{
+    public WineDbEntities()
+        : base("name=WineDbEntities")
+    {
+    }
+
+    protected override void OnModelCreating(DbModelBuilder modelBuilder)
+    {
+        throw new UnintentionalCodeFirstException();
+    }
+
+    public virtual DbSet<C__EFMigrationsHistory> C__EFMigrationsHistory { get; set; }
+    public virtual DbSet<Grape> Grape { get; set; }
+}
+```
+
+Entity framework generated partial data model:
+
+```csharp
+public partial class Grape
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public string Description { get; set; }
+}
+```
+
+Partial class could also be used in different components of the same framework.
+
+Take a example of CoreCLR:
+
+```csharp
+//File path: TypeSystem\RuntimeDetermined\TypeDesc.RuntimeDetermined.cs
+namespace Internal.TypeSystem
+{
+    partial class TypeDesc
+    {
+        public abstract bool IsRuntimeDeterminedSubtype
+        {
+            get;
+        }
+
+        public bool IsRuntimeDeterminedType
+        {
+            get
+            {
+                return this.GetType() == typeof(RuntimeDeterminedType);
+            }
+        }
+
+        public abstract TypeDesc GetNonRuntimeDeterminedTypeFromRuntimeDeterminedSubtypeViaSubstitution(Instantiation typeInstantiation, Instantiation methodInstantiation);
+    }
+}
+
+//File path: TypeSystem\Serialization\TypeDesc.Serialization.cs
+namespace Internal.TypeSystem
+{
+    partial class TypeDesc
+    {
+        public virtual bool IsSerializable
+        {
+            get
+            {
+                return false;
+            }
+        }
+    }
+}
+```
+
+**Important:** partial class must be in the same namespace and same physical assembly (.dll or .exe).
+
+<br/>
+
+**[![](images/chevron.png) back to top](#CSharp-interview-questions-and-answers)**
+
+<br/>
+
+12. #### What is abstract class?
+
+abstract class is always used with abstract method, and act as the base class.
+
+abstract class can not be instantiated, you have to instantiate its derived class.
+
+```csharp
+public abstract class Employee
+{
+    public abstract void Do();
+}
+public class Worker : Employee
+{
+    public override void Do()
+    {
+        //DO
+    }
+}
+```
+
+<br/>
+
+**[![](images/chevron.png) back to top](#CSharp-interview-questions-and-answers)**
+
+<br/>
+
+13. #### What is static class?
 
 
-31.   #### What is the difference between string and System.String ? 
+
+<br/>
+
+**[![](images/chevron.png) back to top](#CSharp-interview-questions-and-answers)**
+
+<br/>
+
+
+1.    #### What is the difference between string and System.String ? 
 
 The string type represents a sequence of zero or more Unicode characters. string is an alias for System.String in .NET.
 
