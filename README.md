@@ -35,10 +35,10 @@
 | 28     | What is the difference between ref and out ?                                                                                    |
 | 29     | What is the difference between finalize and dispose ?                                                                           |
 | 30     | What is the difference between finalize and finally ?                                                                           |
-| 31     | What is the difference between string and System.String ?                                                                       |
+| 31     | [What is the difference between string and System.String](#What-is-the-difference-between-string-and-System-String)  ?          |
 | 32     | What is the difference between String and StringBuilder ?                                                                       |
-| 33     | What is delegate and how to use delegate?                                                                                       |
-| 34     | What are types of delegates ?                                                                                                   |
+| 33     | [What is delegate and how to use delegate](#What-is-delegate-and-how-to-use-delegate)?                                          |
+| 34     | [What are types of delegates](What-are-types-of-delegates) ?                                                                    |
 | 35     | What is event ?                                                                                                                 |
 | 36     | What is the relationship between delegate and event ?                                                                           |
 | 37     | What is generics ?                                                                                                              |
@@ -77,7 +77,9 @@
 | 70     | What is covariance ?                                                                                                            |
 | 71     | What is contravariance ?                                                                                                        |
 | 72     | What is async and await ?                                                                                                       |
-
+| 73     | What is the difference between HashSet, Hashtable and Dictionary ?                                                              |
+| 74     | [Write a singleton class](Write-a-singleton-class)                                                                              |
+| 75     | [What are design patterns](What-are-design-patterns)?                                                                           |
 
 <br/>
 <br/>
@@ -95,7 +97,22 @@ C# is one of the programming languages designed for the Common Language Infrastr
 
 C# was designed by Anders Hejlsberg, and its development team is currently led by Mads Torgersen.
 
-ECMA 334 Specification: [Link](https://www.ecma-international.org/publications/standards/Ecma-334.htm)
+
+C# Language Specification : [Standard ECMA-334](https://www.ecma-international.org/publications/standards/Ecma-334.htm)
+
+ECMA (European Computer Manufacturers Association) is located in Geneva.
+
+Other ECMA standards:
+
+| Number   | Name                                            |
+| -------- | ----------------------------------------------- |
+| ECMA-335 | CLI: Common Language Infrastructure             |
+| ECMA-348 | WSDL: Web Services Description Language         |
+| ECMA-404 | The JSON Data Interchange Syntax                |
+| ECMA-262 | ES2020: ECMAScript® 2020 Language Specification |
+
+
+
 
 <br/>
 
@@ -304,6 +321,16 @@ Reference typed data is stored in heap, the reference to data is stored in stack
 
 ![](./images/001_stack_heap.png)
 
+**C# built-in value types:**
+
+![](./images/002_value_types.PNG)
+
+<br/>
+
+**C# built-in reference types:**
+
+![](./images/003_reference_types.PNG)
+
 <br/>
 
 **[![](images/chevron.png) back to top](#CSharp-interview-questions-and-answers)**
@@ -394,15 +421,15 @@ Class members could be **public**, **internal**, **protected**, **protected inte
 <br/>
 
 <table>
-<tr><td><b>Access Modifier</b></td><td colspan=3><b>Same Assembly</b></td><td colspan=2><b>Different Assembly</b></td></tr>
-<tr><td></td><td><b>Same class</b></td><td><b>Derived class</b></td><td><b>Other class</b></td><td><b>Derived class</b></td><td><b>Other class</b></td></tr>
+<tr><td><b>Access Modifier</b></td><td><b>C# version</b></td><td colspan=3><b>Same Assembly</b></td><td colspan=2><b>Different Assembly</b></td></tr>
+<tr><td></td><td></td><td><b>Same class</b></td><td><b>Derived class</b></td><td><b>Other class</b></td><td><b>Derived class</b></td><td><b>Other class</b></td></tr>
 <tbody>
-<tr><td><b>Public</b></td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
-<tr><td><b>Internal</b></td><td>Y</td><td>Y</td><td>Y</td><td></td><td></td></tr>
-<tr><td><b>Protected Internal</b></td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td></td></tr>
-<tr><td><b>Protected</b></td><td>Y</td><td>Y</td><td></td><td>Y</td><td></td></tr>
-<tr><td><b>Private Protected</b></td><td>Y</td><td>Y</td><td></td><td></td><td></td></tr>
-<tr><td><b>Private</b></td><td>Y</td><td></td><td></td><td></td><td></td></tr>
+<tr><td><b>Public</b><td></td></td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr>
+<tr><td><b>Internal</b></td><td></td><td>Y</td><td>Y</td><td>Y</td><td></td><td></td></tr>
+<tr><td><b>Protected Internal</b></td><td></td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td></td></tr>
+<tr><td><b>Protected</b></td><td></td><td>Y</td><td>Y</td><td></td><td>Y</td><td></td></tr>
+<tr><td><b>Private Protected</b></td><td>7.2 or later</td><td>Y</td><td>Y</td><td></td><td></td><td></td></tr>
+<tr><td><b>Private</b></td><td></td><td>Y</td><td></td><td></td><td></td><td></td></tr>
 </tbody>
 </table>
 
@@ -573,22 +600,108 @@ public class Worker : Employee
 <br/>
 
 
-1.    #### What is the difference between string and System.String ? 
+33.  #### What is delegate and how to use delegate?
+
+
+
+<br/>
+
+**[![](images/chevron.png) back to top](#CSharp-interview-questions-and-answers)**
+
+<br/>
+
+73.    #### What is the difference between string and System.String? 
 
 The string type represents a sequence of zero or more Unicode characters. string is an alias for System.String in .NET.
 
 string is an alias in C#
 System.String is a .NET type.
 
+<br/>
+
+**[![](images/chevron.png) back to top](#What-is-the-difference-between-string-and-System-String)**
+
+<br/>
 
 
 
+74.    #### Write a singleton class
+
+This is a singleton logger implemented with Lazy.
+
+```csharp
+public class Logger
+{
+    private static readonly ILog Log = LogManager.GetLogger(typeof(LoggerConfigurator));
+
+    private static readonly Lazy<LogWrapper> Lazy = new Lazy<LogWrapper>(() => new LogWrapper(Log));
+
+    public static LogWrapper Instance
+    {
+        get { return Lazy.Value; }
+    }
+}
+```
+
+<br/>
+
+**[![](images/chevron.png) back to top](#What-is-the-difference-between-string-and-System-String)**
+
+<br/>
 
 
 
+75.    #### What are design patterns
+
+Design patterns are common best practices in developping software.
+
+The book **Design Patterns: Elements of Reusable Object-Oriented Software** introduced 23 design patterns.
+
+This book has 4 authors: Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides, so the design patterns are also called **Gang of Four Design Patterns**.
+
+They are 3 types of design patterns:
+
+- **Creational** design patterns:
+  - **Abstract factory** groups object factories that have a common theme.
+  - **Builder** constructs complex objects by separating construction and representation.
+  - **Factory method** creates objects without specifying the exact class to create.
+  - **Prototype** creates objects by cloning an existing object.
+  - **Singleton** restricts object creation for a class to only one instance.
+
+<br/>
+
+- **Structual** design patterns:
+  - **Adapter** allows classes with incompatible interfaces to work together by wrapping its own interface around that of an already existing class.
+  - **Bridge** decouples an abstraction from its implementation so that the two can vary independently.
+  - **Composite** composes zero-or-more similar objects so that they can be manipulated as one object.
+  - **Decorator** dynamically adds/overrides behaviour in an existing method of an object.
+  - **Facade** provides a simplified interface to a large body of code.
+  - **Flyweight** reduces the cost of creating and manipulating a large number of similar objects.
+  - **Proxy** provides a placeholder for another object to control access, reduce cost, and reduce complexity.
+  
+  <br/>
+
+- **Behaviorial** design patterns:
+  - **Chain of responsibility** delegates commands to a chain of processing objects.
+  - **Command** creates objects which encapsulate actions and parameters.
+  - **Interpreter** implements a specialized language.
+  - **Iterator** accesses the elements of an object sequentially without exposing its underlying representation.
+  - **Mediator** allows loose coupling between classes by being the only class that has detailed knowledge of their methods.
+  - **Memento** provides the ability to restore an object to its previous state (undo).
+  - **Observer** is a publish/subscribe pattern which allows a number of observer objects to see an event.
+  - **State** allows an object to alter its behavior when its internal state changes.
+  - **Strategy** allows one of a family of algorithms to be selected on-the-fly at runtime.
+  - **Template** method defines the skeleton of an algorithm as an abstract class, allowing its subclasses to provide concrete behavior.
+  - **Visitor** separates an algorithm from an object structure by moving the hierarchy of methods into one object.
+
+<br/>
 
 
 
+<br/>
 
+**[![](images/chevron.png) back to top](#What-is-the-difference-between-string-and-System-String)**
+
+<br/>
 
 
