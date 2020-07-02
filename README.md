@@ -321,15 +321,6 @@ Reference typed data is stored in heap, the reference to data is stored in stack
 
 ![](./images/001_stack_heap.png)
 
-**C# built-in value types:**
-
-![](./images/002_value_types.PNG)
-
-<br/>
-
-**C# built-in reference types:**
-
-![](./images/003_reference_types.PNG)
 
 <br/>
 
@@ -337,7 +328,7 @@ Reference typed data is stored in heap, the reference to data is stored in stack
 
 <br/>
 
-7. #### What is class?
+1. #### What is class?
 
 A type that is defined as a class is a reference type.
 Its default value is null.
@@ -645,13 +636,13 @@ public class Logger
 
 <br/>
 
-**[![](images/chevron.png) back to top](#What-is-the-difference-between-string-and-System-String)**
+**[![](images/chevron.png) back to top](#Write-a-singleton-class)**
 
 <br/>
 
 
 
-75.    #### What are design patterns
+1.     #### What are design patterns
 
 Design patterns are common best practices in developping software.
 
@@ -700,7 +691,7 @@ They are 3 types of design patterns:
 
 <br/>
 
-**[![](images/chevron.png) back to top](#What-is-the-difference-between-string-and-System-String)**
+**[![](images/chevron.png) back to top](#What-are-design-patterns)**
 
 <br/>
 
