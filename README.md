@@ -2,84 +2,84 @@
 
 <br/>
 
-| Number | Questions                                                                                                                       |
-| ------ | ------------------------------------------------------------------------------------------------------------------------------- |
-| 1      | [What is C# ?](#What-is-CSharp)                                                                                                 |
-| 2      | [What is the root type of all types ?](#What-is-the-root-type-of-all-types)                                                     |
-| 3      | [What is object ?](#What-is-object)                                                                                             |
-| 4      | [What is value type ?](#What-is-value-type)                                                                                     |
-| 5      | [What is reference type ?](#What-is-reference-type)                                                                             |
-| 6      | [What is the difference between value type and reference type ?](#What-is-the-difference-between-value-type-and-reference-type) |
-| 7      | [What is class ?](#What-is-class)                                                                                               |
-| 8      | [What is struct ?](#What-is-struct)                                                                                             |
-| 9      | [What are access modifiers ?](#What-are-access-modifiers)                                                                       |
-| 10     | [What is sealed class ?](#What-is-sealed-class)                                                                                 |
-| 11     | [What is partial class ?](#What-is-partial-class)                                                                               |
-| 12     | [What is abstract class ?](#What-is-abstract-class)                                                                             |
-| 13     | [What is static class ?](#What-is-static-class)                                                                                 |
-| 14     | [What is partial method ?](#What-is-partial-method)                                                                             |
-| 15     | [What is sealed method ?](#What-is-partial-method)                                                                              |
-| 16     | [What is interface ?](#What-is-interface)                                                                                       |
-| 17     | What is the difference between interface and abstract class ?                                                                   |
-| 18     | What is anonymous type ?                                                                                                        |
-| 19     | What is boxing and unboxing ?                                                                                                   |
-| 20     | What is inheritance ?                                                                                                           |
-| 21     | What is encapsulation ?                                                                                                         |
-| 22     | What is polymorphism ?                                                                                                          |
-| 22     | What is abstraction ?                                                                                                           |
-| 23     | What is managed code and unmanaged code ?                                                                                       |
-| 24     | What is the difference between virtual method and abstract method ?                                                             |
-| 25     | What is namespace ?                                                                                                             |
-| 26     | What is the difference between break and continue ?                                                                             |
-| 27     | What is the difference between constant and readonly ?                                                                          |
-| 28     | What is the difference between ref and out ?                                                                                    |
-| 29     | What is the difference between finalize and dispose ?                                                                           |
-| 30     | What is the difference between finalize and finally ?                                                                           |
-| 31     | [What is the difference between string and System.String](#What-is-the-difference-between-string-and-System-String)  ?          |
-| 32     | What is the difference between String and StringBuilder ?                                                                       |
-| 33     | [What is delegate and how to use delegate](#What-is-delegate-and-how-to-use-delegate)?                                          |
-| 34     | [What are types of delegates](What-are-types-of-delegates) ?                                                                    |
-| 35     | What is event ?                                                                                                                 |
-| 36     | What is the relationship between delegate and event ?                                                                           |
-| 37     | What is generics ?                                                                                                              |
-| 38     | What is lazy loading ?                                                                                                          |
-| 39     | What is IEnumerable<T> ?                                                                                                        |
-| 40     | What is property ?                                                                                                              |
-| 41     | What is indexer ?                                                                                                               |
-| 42     | What is .NET Framework ?                                                                                                        |
-| 43     | What is CLR ?                                                                                                                   |
-| 44     | What is CTS ?                                                                                                                   |
-| 45     | What is CLI ?                                                                                                                   |
-| 46     | What is BCL ?                                                                                                                   |
-| 47     | What is DLR ?                                                                                                                   |
-| 48     | What is side by side execution ?                                                                                                |
-| 49     | What is Application domain ?                                                                                                    |
-| 50     | What is GAC ?                                                                                                                   |
-| 51     | What is JIT ?                                                                                                                   |
-| 52     | What are the types of JIT ?                                                                                                     |
-| 53     | What is GC ?                                                                                                                    |
-| 54     | What is IL ?                                                                                                                    |
-| 55     | What is manifest ?                                                                                                              |
-| 56     | What is CAS ?                                                                                                                   |
-| 57     | How many ways are there to overload a method ?                                                                                  |
-| 58     | How "using" is used ?                                                                                                           |
-| 59     | What is serialization ?                                                                                                         |
-| 60     | What is jagged array ?                                                                                                          |
-| 61     | What is LINQ ?                                                                                                                  |
-| 62     | What is Lambda expression ?                                                                                                     |
-| 63     | What is dealock ?                                                                                                               |
-| 64     | What is race condition ?                                                                                                        |
-| 65     | What is thread ?                                                                                                                |
-| 66     | What are status of a thread ?                                                                                                   |
-| 67     | What is multithreading ?                                                                                                        |
-| 68     | What are types of thread ?                                                                                                      |
-| 69     | What are async and await ?                                                                                                      |
-| 70     | What is covariance ?                                                                                                            |
-| 71     | What is contravariance ?                                                                                                        |
-| 72     | What is async and await ?                                                                                                       |
-| 73     | What is the difference between HashSet, Hashtable and Dictionary ?                                                              |
-| 74     | [Write a singleton class](Write-a-singleton-class)                                                                              |
-| 75     | [What are design patterns](What-are-design-patterns)?                                                                           |
+| Number | Questions                                                                                                                      |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------ |
+| 1      | [What is C#?](#What-is-CSharp)                                                                                                 |
+| 2      | [What is the root type of all types?](#What-is-the-root-type-of-all-types)                                                     |
+| 3      | [What is an object?](#What-is-object)                                                                                             |
+| 4      | [What is a value type?](#What-is-value-type)                                                                                   |
+| 5      | [What is a reference type?](#What-is-reference-type)                                                                           |
+| 6      | [What is the difference between value type and reference type?](#What-is-the-difference-between-value-type-and-reference-type) |
+| 7      | [What is a class?](#What-is-class)                                                                                             |
+| 8      | [What is a struct?](#What-is-struct)                                                                                           |
+| 9      | [What are access modifiers?](#What-are-access-modifiers)                                                                       |
+| 10     | [What is sealed class?](#What-is-sealed-class)                                                                                 |
+| 11     | [What is partial class?](#What-is-partial-class)                                                                               |
+| 12     | [What is an abstract class?](#What-is-abstract-class)                                                                          |
+| 13     | [What is a static class?](#What-is-static-class)                                                                               |
+| 14     | [What is a partial method?](#What-is-partial-method)                                                                           |
+| 15     | [What is a sealed method?](#What-is-partial-method)                                                                            |
+| 16     | [What is interface?](#What-is-interface)                                                                                       |
+| 17     | What is the difference between interface and abstract class?                                                                   |
+| 18     | What is anonymous type?                                                                                                        |
+| 19     | What is boxing and unboxing?                                                                                                   |
+| 20     | What is inheritance?                                                                                                           |
+| 21     | What is encapsulatio?                                                                                                          |
+| 22     | What is polymorphism?                                                                                                          |
+| 22     | What is abstraction?                                                                                                           |
+| 23     | What is managed code and unmanaged code?                                                                                       |
+| 24     | What is the difference between virtual method and abstract method?                                                             |
+| 25     | What is namespace?                                                                                                             |
+| 26     | What is the difference between break and continue?                                                                             |
+| 27     | What is the difference between constant and readonly?                                                                          |
+| 28     | What is the difference between ref and out?                                                                                    |
+| 29     | What is the difference between finalize and dispose ?                                                                          |
+| 30     | What is the difference between finalize and finally ?                                                                          |
+| 31     | [What is the difference between string and System.String](#What-is-the-difference-between-string-and-System-String)  ?         |
+| 32     | What is the difference between String and StringBuilder?                                                                       |
+| 33     | [What is delegate and how to use delegate](#What-is-delegate-and-how-to-use-delegate)?                                         |
+| 34     | [What are types of delegates](What-are-types-of-delegates)?                                                                    |
+| 35     | What is an event ?                                                                                                             |
+| 36     | What is the relationship between delegate and event?                                                                           |
+| 37     | What is generics?                                                                                                              |
+| 38     | What is lazy loading?                                                                                                          |
+| 39     | What is IEnumerable<T>?                                                                                                        |
+| 40     | What is property                                                                                                               |
+| 41     | What is indexer?                                                                                                               |
+| 42     | What is .NET Framework?                                                                                                        |
+| 43     | What is CLR?                                                                                                                   |
+| 44     | What is CTS?                                                                                                                   |
+| 45     | What is CLI?                                                                                                                   |
+| 46     | What is BCL?                                                                                                                   |
+| 47     | What is DLR?                                                                                                                   |
+| 48     | What is side by side execution?                                                                                                |
+| 49     | What is Application domain?                                                                                                    |
+| 50     | What is GAC?                                                                                                                   |
+| 51     | What is JIT?                                                                                                                   |
+| 52     | What are the types of JIT?                                                                                                     |
+| 53     | What is GC?                                                                                                                    |
+| 54     | What is IL?                                                                                                                    |
+| 55     | What is manifest?                                                                                                              |
+| 56     | What is CAS?                                                                                                                   |
+| 57     | How many ways are there to overload a method?                                                                                  |
+| 58     | How "using" is used?                                                                                                           |
+| 59     | What is serialization?                                                                                                         |
+| 60     | What is jagged array?                                                                                                          |
+| 61     | What is LINQ?                                                                                                                  |
+| 62     | What is Lambda expression?                                                                                                     |
+| 63     | What is dealock?                                                                                                               |
+| 64     | What is race condition?                                                                                                        |
+| 65     | What is thread?                                                                                                                |
+| 66     | What are status of a thread?                                                                                                   |
+| 67     | What is multithreading?                                                                                                        |
+| 68     | What are types of thread?                                                                                                      |
+| 69     | What are async and await?                                                                                                      |
+| 70     | What is covariance?                                                                                                            |
+| 71     | What is contravariance?                                                                                                        |
+| 72     | What is async and await?                                                                                                       |
+| 73     | What is the difference between HashSet, Hashtable and Dictionary?                                                              |
+| 74     | [Write a singleton class](Write-a-singleton-class)                                                                             |
+| 75     | [What are design patterns](What-are-design-patterns)?                                                                          |
 
 <br/>
 <br/>
@@ -139,7 +139,7 @@ Other ECMA standards:
 
 <br/>
 
-1. #### What is the root type of all types?
+2. #### What is the root type of all types?
 
 C# has a unified type system. 
 
@@ -155,7 +155,7 @@ Furthermore, C# supports both user-defined reference types and value types, allo
 
 <br/>
 
-3. #### What is object?
+3. #### What is an object?
 
 Object is the base type for all the other types.
 
@@ -209,7 +209,7 @@ Object has 1 public method **GetType** to get the type of a variable.
 
 <br/>
 
-4. #### What is value type?
+4. #### What is a value type?
 
 Value type includes **all numeric** types, **DateTime**, **Timespan**, **Struct** and **Enum** types.
 
@@ -235,7 +235,7 @@ Value type includes **all numeric** types, **DateTime**, **Timespan**, **Struct*
 
 <br/>
 
-The caracteristics of value type is: a value type variable contains a simple value.
+The characteristics of a value type is: a value type variable contains a simple value.
 When you copy an value type variable, you create **a new copy of the value**.
 
 <br/>
@@ -274,7 +274,7 @@ Console.WriteLine(isValueType); //Display: true
 
 <br/>
 
-5. #### What is reference type?
+5. #### What is a reference type?
 
 Reference type includes **class**, **string**, **delegates**, **interface**, and **array** types.
 
@@ -328,7 +328,7 @@ Reference typed data is stored in heap, the reference to data is stored in stack
 
 <br/>
 
-1. #### What is class?
+7. #### What is a class?
 
 A type that is defined as a class is a reference type.
 Its default value is null.
@@ -349,7 +349,7 @@ public static void Main(){
 
 <br/>
 
-8. #### What is struct?
+8. #### What is a struct?
 
 A structure type (or struct type) is a value type that can encapsulate data and related functionality.
 
@@ -430,7 +430,7 @@ Class members could be **public**, **internal**, **protected**, **protected inte
 
 <br/>
 
-10. #### What is sealed class?
+10. #### What is a sealed class?
 
 Sealed class can not be inherited.
 
@@ -448,7 +448,7 @@ public sealed class A{
 
 <br/>
 
-11. #### What is partial class?
+11. #### What is a partial class?
 
 Partial class means a class can be divided into several classes.
 
@@ -554,11 +554,11 @@ namespace Internal.TypeSystem
 
 <br/>
 
-12. #### What is abstract class?
+12. #### What is an abstract class?
 
-abstract class is always used with abstract method, and act as the base class.
+Abstract class is always used with abstract method, and act as the base class.
 
-abstract class can not be instantiated, you have to instantiate its derived class.
+Abstract class can not be instantiated, you have to instantiate its derived class.
 
 ```csharp
 public abstract class Employee
@@ -580,7 +580,7 @@ public class Worker : Employee
 
 <br/>
 
-13. #### What is static class?
+13. #### What is a static class?
 
 
 
@@ -590,18 +590,7 @@ public class Worker : Employee
 
 <br/>
 
-
-33.  #### What is delegate and how to use delegate?
-
-
-
-<br/>
-
-**[![](images/chevron.png) back to top](#CSharp-interview-questions-and-answers)**
-
-<br/>
-
-73.    #### What is the difference between string and System.String? 
+31.    #### What is the difference between string and System.String? 
 
 The string type represents a sequence of zero or more Unicode characters. string is an alias for System.String in .NET.
 
@@ -614,7 +603,15 @@ System.String is a .NET type.
 
 <br/>
 
+33.  #### What is delegate and how to use delegate?
 
+
+
+<br/>
+
+**[![](images/chevron.png) back to top](#CSharp-interview-questions-and-answers)**
+
+<br/>
 
 74.    #### Write a singleton class
 
@@ -642,9 +639,9 @@ public class Logger
 
 
 
-1.     #### What are design patterns
+75.     #### What are design patterns?
 
-Design patterns are common best practices in developping software.
+Design patterns are common best practices in developing software.
 
 The book **Design Patterns: Elements of Reusable Object-Oriented Software** introduced 23 design patterns.
 
@@ -662,7 +659,7 @@ They are 3 types of design patterns:
 <br/>
 
 - **Structual** design patterns:
-  - **Adapter** allows classes with incompatible interfaces to work together by wrapping its own interface around that of an already existing class.
+  - **Adapter** allows classes with incompatible interfaces to work together by wrapping its own interface around that of an existing class.
   - **Bridge** decouples an abstraction from its implementation so that the two can vary independently.
   - **Composite** composes zero-or-more similar objects so that they can be manipulated as one object.
   - **Decorator** dynamically adds/overrides behaviour in an existing method of an object.
